@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио | Иосипчук Максим</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Montserrat+Alternates:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./init.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="theme-light">
+    <header class="header container">
+        <div class="header__logo">
+            <svg class="header__image" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 522.000000 526.000000" preserveAspectRatio="xMidYMid meet">
+                <g transform="translate(0.000000,526.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                    <path d="M2475 5250 c-638 -82 -1059 -726 -879 -1346 50 -174 135 -316 268
+                    -450 134 -133 276 -218 451 -269 499 -144 1025 92 1250 562 235 490 49 1092
+                    -420 1364 -195 113 -452 167 -670 139z"/>
+                    <path d="M5186 5149 c-46 -210 -148 -494 -254 -704 -389 -777 -1071 -1324
+                    -1847 -1480 -182 -37 -272 -45 -480 -45 -487 0 -935 137 -1349 414 -166 111
+                    -256 186 -412 341 -369 367 -640 838 -778 1355 -56 208 -56 207 -50 80 49
+                    -1060 585 -1980 1444 -2478 11 -7 2 -16 -35 -37 -438 -253 -820 -663 -1065
+                    -1146 -209 -411 -317 -830 -344 -1329 l-5 -95 35 130 c153 575 408 1030 793
+                    1416 418 417 919 671 1471 745 144 19 457 18 612 -2 815 -105 1572 -661 1985
+                    -1459 122 -236 200 -440 269 -705 l33 -125 -5 115 c-16 327 -88 683 -199 987
+                    -57 154 -215 466 -309 607 -232 348 -512 623 -836 821 -52 32 -99 62 -103 65
+                    -5 4 18 22 50 40 219 123 479 342 667 561 429 501 676 1119 727 1816 13 188 9
+                    220 -15 112z"/>
+                </g>
+            </svg>
+        </div>
+        <nav class="header__nav">
+            <ul class="header__links">
+                <li class="header__item">
+                    <a class="header__link" href="#about">О себе</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#way">Мой путь</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#skills">Мои навыки</a>
+                </li>
+                <li class="header__item">
+                    <a class="header__link" href="#contact">Связаться</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__settings">
+            <button class="theme" id="theme">
+                <div class="theme__switcher" id="theme__switcher"></div>
+                <span class="theme__item theme__item_light"><img width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/sun--v1.png" alt="Солнце" draggable="false" /></span>
+                <span class="theme__item theme__item_dark"><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/crescent-moon.png" alt="Луна" draggable="false" /></span>
+            </button>
+            <button class="header__burger" id="header__burger">
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
+    </header>
+    <div class="nav" id="nav">
+        <ul class="nav__links">
+            <li class="nav__item">
+                <a class="nav__link flex-center" href="#about">О себе</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link flex-center" href="#way">Мой путь</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link flex-center" href="#skills">Мои навыки</a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link flex-center" href="#contact">Связаться</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="intro">
+        <div class="intro__inner container">
+            <div class="intro__text flex-center">
+                <h1 class="intro__title">Привет, я Максим - frontend разработчик</h1>
+                <p class="intro__about">Занимаюсь Frontend-разработкой. Создаю сайты с использованием современного стека технологий.</p>
+            </div>
+            <div class="intro__photo flex-center">
+                <img class="intro__image" src="./assets/images/preview.jpg" draggable="false" loading="lazy" />
+            </div>
+        </div>
+    </div>
+
+    <div class="quote">
+        <blockquote class="quote__inner container">
+            „Вёрстка — это как йога для сайтов: гибкость и баланс — ключ к успеху.“
+        </blockquote>
+    </div>
+
+    <div class="about" id="about">
+        <div class="about__inner">
+            <h2 class="about__title title">О себе</h2>
+            <section class="about__info">
+                <article class="about-article">
+                    <div class="about-article__icon">
+                        <img class="about-article__image" />
+                    </div>
+                    <p class="about__text">Я - 17-летний Максим, который увлекается IT-индустрией.</p>
+                </article>
+                <article class="about-article">
+                    <div class="about-article__icon">
+                        <img class="about-article__image" />
+                    </div>
+                    <p class="about__text">В настоящее время я обучаюсь на специалиста в области frontend-разработки и активно стремлюсь к карьерному росту в этой сфере.</p>
+                </article>
+                <article class="about-article">
+                    <div class="about-article__icon">
+                        <img class="about-article__image" />
+                    </div>
+                    <p class="about__text">Помимо frontend, я обладаю базовыми знаниями Python и уже успел реализовать несколько проектов: Telegram и Discord боты, а также серверную часть на Flask. Хотя у меня пока нет практического опыта работы, я готов начать стажировку и применить свои знания на практике.</p>
+                </article>
+                <article class="about-article">
+                    <div class="about-article__icon">
+                        <img class="about-article__image" />
+                    </div>
+                    <p class="about__text">С 2023 по 2027 год я обучаюсь в <a class="link" href="https://ygk.edu.yar.ru/" target="_blank">Ярославском градостроительном колледже</a> на специальности «Информационные системы и программирование», что в дальнейшем даст мне хорошую базу для карьеры.</p>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <div class="way" id="way">
+        <div class="way__inner container">
+            <h2 class="way__title title">Мой путь</h2>
+            <section class="way__steps">
+                <article class="way__step">
+                    <div class="way__info">
+                        <div class="way__picture">
+                            <img class="way__image" src="./assets/images/step1.png" alt="Школа №33 им. К. Маркса" />
+                        </div>
+                        <div class="way__text">
+                            <h3>ГОУ ЯО "Средняя школа № 33"</h3>
+                            <p>Окончил 9 классов средней школы №33 им. К. Маркса "С углубленным изучением математики".</p>
+                        </div>
+                    </div>
+                    <div class="way__step-number flex-center">
+                        <p>1</p>
+                    </div>
+                </article>
+                <article class="way__step_reverse">
+                    <div class="way__info">
+                        <div class="way__picture">
+                            <img class="way__image" src="./assets/images/step2.png" alt="Детский технопарк «Кванториум» Ярославль" />
+                        </div>
+                        <div class="way__text">
+                            <h3>Детский технопарк «Кванториум» Ярославль</h3>
+                            <p>Параллельно обучению в школе, посещал детский технопарк «Кванториум». Изучал основы, принимал участие в простых проектах.</p>
+                        </div>
+                    </div>
+                    <div class="way__step-number flex-center">
+                        <p>2</p>
+                    </div>
+                </article>
+                <article class="way__step">
+                    <div class="way__info">
+                        <div class="way__picture">
+                            <img class="way__image" src="./assets/images/step3.png" alt="Ярославский градостроительный колледж" />
+                        </div>
+                        <div class="way__text">
+                            <h3>ГПОУ ЯО Ярославский градостроительный колледж</h3>
+                            <p>В 2023 году после окончания школы и успешной сдачи ОГЭ поступил в Ярославский градостроительный колледж на специальность «Информационные системы и программирование». На данный момент (2025 г.) учусь на 2-м курсе.</p>
+                        </div>
+                    </div>
+                    <div class="way__step-number flex-center">
+                        <p>3</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <svg style="display: none;">
+        <symbol class="icon-arrow" id="icon-arrow" viewBox="0 0 24 24">
+            <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+    </svg>
+
+    <div class="skills">
+        <div class="skills__inner container flex-center">
+            <h2 class="title">Мой стек технологий</h2>
+            <section class="skills__list">
+                <article class="skills__item" onclick="showSkill('html')">
+                    <img class="skills__image" src="./assets/svg/html.svg" draggable="false" loading="lazy" />
+                    <div class="skills__footer">
+                        <h3 class="skills__title">HTML5</h3>
+                        <svg class="skills__icon">
+                            <use href="#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </article>
+                <article class="skills__item" onclick="showSkill('css')">
+                    <img class="skills__image" src="./assets/svg/css.svg" draggable="false" loading="lazy" />
+                    <div class="skills__footer">
+                        <h3 class="skills__title">CSS3</h3>
+                        <svg class="skills__icon">
+                            <use href="#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </article>
+                <article class="skills__item" onclick="showSkill('js')">
+                    <img class="skills__image" src="./assets/svg/js.svg" draggable="false" loading="lazy" />
+                    <div class="skills__footer">
+                        <h3 class="skills__title">JavaScript</h3>
+                        <svg class="skills__icon">
+                            <use href="#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </article>
+                <article class="skills__item" onclick="showSkill('ts')">
+                    <img class="skills__image" src="./assets/svg/ts.svg" draggable="false" loading="lazy" />
+                    <div class="skills__footer">
+                        <h3 class="skills__title">TypeScript</h3>
+                        <svg class="skills__icon">
+                            <use href="#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </article>
+                <article class="skills__item" onclick="showSkill('react')">
+                    <img class="skills__image" src="./assets/svg/react.svg" draggable="false" loading="lazy" />
+                    <div class="skills__footer">
+                        <h3 class="skills__title">React</h3>
+                        <svg class="skills__icon">
+                            <use href="#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </article>
+                <article class="skills__item" onclick="showSkill('redux')">
+                    <img class="skills__image" src="./assets/svg/redux.svg" draggable="false" loading="lazy" />
+                    <div class="skills__footer">
+                        <h3 class="skills__title">Redux</h3>
+                        <svg class="skills__icon">
+                            <use href="#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </article>
+                <article class="skills__item" onclick="showSkill('more')">
+                    <img class="skills__image" src="./assets/images/more.png" draggable="false" loading="lazy" />
+                    <div class="skills__footer">
+                        <h3 class="skills__title">Прочее</h3>
+                        <svg class="skills__icon">
+                            <use href="#icon-arrow"></use>
+                        </svg>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+
+    <div class="skill-box" id="skill">
+        <div class="skill-box__inner">
+            <button class="skill-box__btn-close" id="skill-close-btn">
+                <svg class="skill-box__image-close" width="25px" height="25px" viewBox="-0.5 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g stroke-width="0"/>
+                    <g stroke-linecap="round" stroke-linejoin="round"/>
+                    <g><path d="M3 21.32L21 3.32001" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M3 3.32001L21 21.32" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
+                </svg>
+            </button>
+            <img id="skill-image" class="skill-box__image" src="" loading="lazy" />
+            <h3 class="skill-box__title title">Навыки <span id="skill-title"></span></h3>
+            <ul id="skill-list" class="skill-box__list"></ul>
+        </div>
+    </div>
+
+    <div class="contact" id="contact">
+        <div class="contact__inner container">
+            <h2 class="title">Отправьте мне сообщение</h2>
+            <form class="contact__form" action="https://formspree.io/f/xbloparp" method="POST">
+                <div class="contact__field">
+                    <label class="contact__label" for="name">Ваше имя</label>
+                    <input class="contact__input" type="text" id="name" name="name" required />
+                </div>
+                <div class="contact__field">
+                    <label class="contact__label" for="email">Email</label>
+                    <input class="contact__input" type="email" id="email" name="email" required />
+                </div>
+                <div class="contact__field">
+                    <label class="contact__label" for="message">Сообщение</label>
+                    <textarea class="contact__textarea" id="message" name="message" required></textarea>
+                </div>
+                <button class="contact__submit" type="submit">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__info">
+                <a class="footer__link" href="https://icons8.ru/icons" target="_blank" title="Перейти на сайт с иконками">Все иконки</a>
+                <a class="footer__link" href="#" title="Перейти на сайт с иконками">Наверх!</a>
+            </div>
+            <div class="footer__social">
+                <div class="footer__item">
+                    <a class="footer__link" href="https://github.com/ShpaksIK" target="_blank"><img src="./assets/svg/github.svg" alt="GitHub" title="Открыть профиль в GitHub" draggable="false" loading="lazy" /></a>
+                </div>
+                <div class="footer__item">
+                    <a class="footer__link" href="https://t.me/Shpaks2" target="_blank"><img src="./assets/svg/telegram.svg" alt="Связаться по Telegram" title="Открыть профиль в Telegram" draggable="false" loading="lazy" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>

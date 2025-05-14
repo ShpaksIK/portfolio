@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'Moderustic';
+    src: url('./assets/fonts/Moderustic-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Moderustic';
+    src: url('./assets/fonts/Moderustic-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Moderustic';
+    src: url('./assets/fonts/Moderustic-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MontserratAlternates';
+    src: url('./assets/fonts/MontserratAlternates-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --font-family-base: 'Moderustic', sans-serif;
+    --font-family-accent: 'MontserratAlternates', sans-serif;
+
+    --font-size-title: clamp(24px, 2.5rem, 64px);
+    --font-size-accent: clamp(16px, 1.3rem, 32px);
+    --font-size-text: clamp(14px, 1rem, 24px);
+
+    --container-width: 1300px;
+    --container-padding-x: 15px;
+    
+    --transition-duration: 0.2s;
+}
+
+.theme-light {
+    /* Черно-белые */
+    --color-light: #ffffff;
+    --color-light-gray: #ececec;
+    --color-dark-gray: #4c4c4c;
+    --color-black: #000000;
+
+    /* Цвета палитры */
+    --color-dark-blue: #001b1e;
+    --color-light-blue: #004571;
+    --color-red: #f9452a;
+    --color-dark-yellow: #ffc358;
+    --color-light-yellow: #ffffc1;
+    
+    /* Темная тема */
+    --color-dark-theme-light-blue: #adafc3;
+    --color-dark-theme-light-background: #272631;
+    --color-dark-theme-dark-background: #222129;
+
+    /* Светлая тема */
+    --color-light-theme-light-yellow: #f5f0dd;
+}
+
+.theme-dark {
+    /* Черно-белые */
+    --color-light: #202027;
+    --color-light-gray: #2c2c37;
+    --color-dark-gray: #b6b6b6;
+    --color-black: #ededed;
+
+    /* Цвета палитры */
+    --color-dark-blue: #001b1e;
+    --color-light-blue: #f9452a;
+    --color-red: #444075;
+    --color-dark-yellow: #444075;
+    --color-light-yellow: #ffffc1;
+    
+    /* Темная тема */
+    --color-dark-theme-light-blue: #202027;
+    --color-dark-theme-light-background: #272631;
+    --color-dark-theme-dark-background: #222129;
+
+    /* Светлая тема */
+    --color-light-theme-light-yellow: #f5f0dd;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-base);
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-black);
+    background-color: var(--color-light-gray);
+    transition: 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-family-accent);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: var(--font-size-title);
+}
+
+h2 {
+    font-size: var(--font-size-title);
+}
+
+h3 {
+    font-size: var(--font-size-accent);
+}
+
+a, button, input, textarea, svg * {
+    transition: var(--transition-duration);
+}
+
+a {
+    color: var(--color-black);
+}
+
+a:hover {
+    color: var(--color-dark-gray);
+}
+
+.container {
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-x);
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link {
+    text-decoration: indianred;
+    color: var(--color-light-blue);
+}
+
+.title {
+    display: inline;
+    text-align: center;
+    font-size: var(--font-size-title);
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--color-light-blue);
+}
+
+.modal-show {
+    overflow: hidden;
+}
