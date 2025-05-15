@@ -51,8 +51,16 @@
         <div class="header__settings">
             <button class="theme" id="theme">
                 <div class="theme__switcher" id="theme__switcher"></div>
-                <span class="theme__item theme__item_light"><img width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/sun--v1.png" alt="Солнце" draggable="false" /></span>
-                <span class="theme__item theme__item_dark"><img width="25" height="25" src="https://img.icons8.com/ios-filled/50/crescent-moon.png" alt="Луна" draggable="false" /></span>
+                <span class="theme__item theme__item_light"><?xml version="1.0" encoding="utf-8"?>
+                    <svg class="theme__item-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 122.88">
+                        <path d="M30,13.21A3.93,3.93,0,1,1,36.8,9.27L41.86,18A3.94,3.94,0,1,1,35.05,22L30,13.21Zm31.45,13A35.23,35.23,0,1,1,36.52,36.52,35.13,35.13,0,0,1,61.44,26.2ZM58.31,4A3.95,3.95,0,1,1,66.2,4V14.06a3.95,3.95,0,1,1-7.89,0V4ZM87.49,10.1A3.93,3.93,0,1,1,94.3,14l-5.06,8.76a3.93,3.93,0,1,1-6.81-3.92l5.06-8.75ZM109.67,30a3.93,3.93,0,1,1,3.94,6.81l-8.75,5.06a3.94,3.94,0,1,1-4-6.81L109.67,30Zm9.26,28.32a3.95,3.95,0,1,1,0,7.89H108.82a3.95,3.95,0,1,1,0-7.89Zm-6.15,29.18a3.93,3.93,0,1,1-3.91,6.81l-8.76-5.06A3.93,3.93,0,1,1,104,82.43l8.75,5.06ZM92.89,109.67a3.93,3.93,0,1,1-6.81,3.94L81,104.86a3.94,3.94,0,0,1,6.81-4l5.06,8.76Zm-28.32,9.26a3.95,3.95,0,1,1-7.89,0V108.82a3.95,3.95,0,1,1,7.89,0v10.11Zm-29.18-6.15a3.93,3.93,0,0,1-6.81-3.91l5.06-8.76A3.93,3.93,0,1,1,40.45,104l-5.06,8.75ZM13.21,92.89a3.93,3.93,0,1,1-3.94-6.81L18,81A3.94,3.94,0,1,1,22,87.83l-8.76,5.06ZM4,64.57a3.95,3.95,0,1,1,0-7.89H14.06a3.95,3.95,0,1,1,0,7.89ZM10.1,35.39A3.93,3.93,0,1,1,14,28.58l8.76,5.06a3.93,3.93,0,1,1-3.92,6.81L10.1,35.39Z"/>
+                    </svg>
+                </span>
+                <span class="theme__item theme__item_dark">
+                    <svg class="theme__item-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 122.89" style="enable-background:new 0 0 122.88 122.89" xml:space="preserve">
+                        <g><path d="M49.06,1.27c2.17-0.45,4.34-0.77,6.48-0.98c2.2-0.21,4.38-0.31,6.53-0.29c1.21,0.01,2.18,1,2.17,2.21 c-0.01,0.93-0.6,1.72-1.42,2.03c-9.15,3.6-16.47,10.31-20.96,18.62c-4.42,8.17-6.1,17.88-4.09,27.68l0.01,0.07 c2.29,11.06,8.83,20.15,17.58,25.91c8.74,5.76,19.67,8.18,30.73,5.92l0.07-0.01c7.96-1.65,14.89-5.49,20.3-10.78 c5.6-5.47,9.56-12.48,11.33-20.16c0.27-1.18,1.45-1.91,2.62-1.64c0.89,0.21,1.53,0.93,1.67,1.78c2.64,16.2-1.35,32.07-10.06,44.71 c-8.67,12.58-22.03,21.97-38.18,25.29c-16.62,3.42-33.05-0.22-46.18-8.86C14.52,104.1,4.69,90.45,1.27,73.83 C-2.07,57.6,1.32,41.55,9.53,28.58C17.78,15.57,30.88,5.64,46.91,1.75c0.31-0.08,0.67-0.16,1.06-0.25l0.01,0l0,0L49.06,1.27 L49.06,1.27z"/></g>
+                    </svg>
+                </span>
             </button>
             <button class="header__burger" id="header__burger">
                 <span class="header__burger-line"></span>
@@ -83,6 +91,7 @@
             <div class="intro__text flex-center">
                 <h1 class="intro__title">Привет, я Максим - frontend разработчик</h1>
                 <p class="intro__about">Занимаюсь Frontend-разработкой. Создаю сайты с использованием современного стека технологий.</p>
+                <a class="intro__download-btn">Скачать резюме</a>
             </div>
             <div class="intro__photo flex-center">
                 <img class="intro__image" src="./assets/images/preview.jpg" draggable="false" loading="lazy" />
@@ -102,25 +111,33 @@
             <section class="about__info">
                 <article class="about-article">
                     <div class="about-article__icon">
-                        <img class="about-article__image" />
+                        <svg class="about-article__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 121.42" style="enable-background:new 0 0 122.88 121.42" xml:space="preserve">
+                            <g><path class="st0" d="M0,121.42l0-19.63c10.5-4.67,42.65-13.56,44.16-26.41c0.34-2.9-6.5-13.96-8.07-19.26 c-3.36-5.35-4.56-13.85-0.89-19.5c1.46-2.25,0.84-10.44,0.84-13.53c0-30.77,53.92-30.78,53.92,0c0,3.89-0.9,11.04,1.22,14.1 c3.54,5.12,1.71,14.19-1.27,18.93c-1.91,5.57-9.18,16.11-8.56,19.26c2.31,11.74,32.13,19.63,41.52,23.8l0,22.23L0,121.42L0,121.42z"/></g>
+                        </svg>
                     </div>
                     <p class="about__text">Я - 17-летний Максим, который увлекается IT-индустрией.</p>
                 </article>
                 <article class="about-article">
                     <div class="about-article__icon">
-                        <img class="about-article__image" />
+                        <svg class="about-article__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 102.87 122.88" style="enable-background:new 0 0 102.87 122.88" xml:space="preserve">
+                            <g><path class="st0" d="M15.97,89.55c7.34-5.26,19.1,0.39,23.74-8.77c1.23-2.43,1.49-5.75,0.39-8.39c-0.45-1.06-1.11-2.01-2-2.73 c-0.39-0.32-0.83-0.6-1.32-0.84c-6.04-3-12.33,1.2-15.67,6.26C18.04,79.74,16.7,85.56,15.97,89.55L15.97,89.55z M12.72,0h46.14 c3.5,0,6.71,1.44,9,3.72c2.32,2.32,3.73,5.49,3.73,9v10.45l-3.65,2.65v-6.09H3.61v83.53h64.32V70.87l3.65-3.46v42.75 c0,3.5-1.44,6.71-3.73,9c-2.32,2.32-5.49,3.72-9,3.72H12.72c-3.5,0-6.71-1.44-9-3.72c-2.32-2.32-3.72-5.49-3.72-9V12.72 c0-3.5,1.44-6.71,3.72-9C6.05,1.4,9.22,0,12.72,0L12.72,0z M35.77,107.24c2.88,0,5.24,2.32,5.24,5.24c0,2.88-2.32,5.24-5.24,5.24 c-2.88,0-5.24-2.32-5.24-5.24C30.54,109.6,32.86,107.24,35.77,107.24L35.77,107.24z M53.21,49.37c4.09,3.26,7.26,7.02,9.42,11.33 l37.99-36.02c1.98-1.88,3.11-3.47,1.45-6.36c-0.83-0.85-1.7-1.3-2.62-1.36c-0.92-0.06-1.88,0.27-2.89,1L53.21,49.37L53.21,49.37z M39.34,65.47c1.77,0.95,4.2,3.29,4.78,5.85l16.47-9.04c-2.38-4.73-5.4-8.78-9.56-11.66C46.7,56.44,44.26,59.95,39.34,65.47 L39.34,65.47z"/></g>
+                        </svg>
                     </div>
                     <p class="about__text">В настоящее время я обучаюсь на специалиста в области frontend-разработки и активно стремлюсь к карьерному росту в этой сфере.</p>
                 </article>
                 <article class="about-article">
                     <div class="about-article__icon">
-                        <img class="about-article__image" />
+                        <svg class="about-article__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 88.9" style="enable-background:new 0 0 122.88 88.9" xml:space="preserve">
+                            <g><path class="st0" d="M102.87,88.9v-1.98h-56.5c-6.11,0-6.4-12.25,0-12.25h4.46h65.92c0.41,0,0.75,0.35,0.75,0.75v10.75 c0,0.4-0.34,0.75-0.75,0.75h-3.38v1.98H102.87L102.87,88.9z M0,88.9V50.29c0-4.29,2.12-8.1,5.36-10.45 c4.46-3.23,16.9-3.52,21.63-0.79c5.03,2.9,5.01,9,9.35,13.24c5.81,5.68,4.35,6.33,12.27,6.33h15.87c14.15,0,6.54,13.76-1.83,13.33 H48.21c-6.99,0-7.58,1.12-13.35-2.72L34.55,88.9H0L0,88.9z M78.15,72.03c-2.04,0-3.7-1.66-3.7-3.7c0-2.04,1.66-3.7,3.7-3.7h25.01 l12.73-25.91c0.89-1.83,3.1-2.58,4.92-1.69c1.83,0.89,2.58,3.1,1.69,4.92l-13.6,27.68c-0.53,1.39-1.88,2.38-3.46,2.38H78.15 L78.15,72.03z M25.67,0c9.75,0,17.65,7.9,17.65,17.65c0,9.75-7.9,17.65-17.65,17.65c-9.75,0-17.65-7.9-17.65-17.65 C8.02,7.9,15.92,0,25.67,0L25.67,0z"/></g>
+                        </svg>
                     </div>
                     <p class="about__text">Помимо frontend, я обладаю базовыми знаниями Python и уже успел реализовать несколько проектов: Telegram и Discord боты, а также серверную часть на Flask. Хотя у меня пока нет практического опыта работы, я готов начать стажировку и применить свои знания на практике.</p>
                 </article>
                 <article class="about-article">
                     <div class="about-article__icon">
-                        <img class="about-article__image" />
+                        <svg class="about-article__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 122.88 73.27" style="enable-background:new 0 0 122.88 73.27" xml:space="preserve">
+                            <g><path class="st0" d="M104.27,58.88l-0.54-19.99l-32.85,9.49c-2.96,0.65-5.88,0.96-8.74,0.97c-3.07,0.01-6.09-0.32-9.06-0.97 L21.7,38.79v20.27c0.9,10.53,31.11,13.75,40.38,14.19c7.43,0.36,36.78-3.52,40.64-9.57C103.55,62.36,104.07,60.76,104.27,58.88 L104.27,58.88z M117.58,24.5v24.43h0.77c0.53,0,0.96,0.43,0.96,0.96v6.57c0,0.52-0.43,0.96-0.96,0.96h-0.77v2.3 c0.98,0.18,1.73,1.05,1.73,2.08v0c0,1.16-0.96,2.12-2.12,2.12h-3.79c-1.16,0-2.12-0.95-2.12-2.12v0c0-1.03,0.75-1.9,1.73-2.08v-2.3 h-0.77c-0.52,0-0.96-0.43-0.96-0.96v-6.57c0-0.53,0.43-0.96,0.96-0.96h0.77v-23L73.03,38.35c-7.24,1.72-14.48,1.84-21.72,0 L7.18,25.18l-3.99-1.19c-4.97-2.03-3.73-6.8,0.9-7.9L54,1.19c5.15-1.47,10.29-1.7,15.44,0l49.01,14.72 c5.33,1.3,6.38,6.23,0.18,8.26L117.58,24.5L117.58,24.5z"/></g>
+                        </svg>
                     </div>
                     <p class="about__text">С 2023 по 2027 год я обучаюсь в <a class="link" href="https://ygk.edu.yar.ru/" target="_blank">Ярославском градостроительном колледже</a> на специальности «Информационные системы и программирование», что в дальнейшем даст мне хорошую базу для карьеры.</p>
                 </article>
@@ -184,7 +201,7 @@
         </symbol>
     </svg>
 
-    <div class="skills">
+    <div class="skills" id="skills">
         <div class="skills__inner container flex-center">
             <h2 class="title">Мой стек технологий</h2>
             <section class="skills__list">
@@ -243,7 +260,9 @@
                     </div>
                 </article>
                 <article class="skills__item" onclick="showSkill('more')">
-                    <img class="skills__image" src="./assets/images/more.png" draggable="false" loading="lazy" />
+                    <svg class="skills__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="122.88px" height="29.956px" viewBox="0 0 122.88 29.956" enable-background="new 0 0 122.88 29.956" xml:space="preserve">
+                        <g><path fill-rule="evenodd" clip-rule="evenodd" d="M122.88,14.978c0,8.271-6.708,14.979-14.979,14.979s-14.976-6.708-14.976-14.979 C92.926,6.708,99.631,0,107.901,0S122.88,6.708,122.88,14.978L122.88,14.978z M29.954,14.978c0,8.271-6.708,14.979-14.979,14.979 S0,23.248,0,14.978C0,6.708,6.705,0,14.976,0S29.954,6.708,29.954,14.978L29.954,14.978z M76.417,14.978 c0,8.271-6.708,14.979-14.979,14.979c-8.27,0-14.978-6.708-14.978-14.979C46.46,6.708,53.168,0,61.438,0 C69.709,0,76.417,6.708,76.417,14.978L76.417,14.978z"/></g>
+                    </svg>
                     <div class="skills__footer">
                         <h3 class="skills__title">Прочее</h3>
                         <svg class="skills__icon">
@@ -264,8 +283,10 @@
                     <g><path d="M3 21.32L21 3.32001" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M3 3.32001L21 21.32" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </g>
                 </svg>
             </button>
-            <img id="skill-image" class="skill-box__image" src="" loading="lazy" />
-            <h3 class="skill-box__title title">Навыки <span id="skill-title"></span></h3>
+            <svg id="skill-image" class="skill-box__image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="122.88px" height="29.956px" viewBox="0 0 122.88 29.956" enable-background="new 0 0 122.88 29.956" xml:space="preserve">
+                <g><path fill-rule="evenodd" clip-rule="evenodd" d="M122.88,14.978c0,8.271-6.708,14.979-14.979,14.979s-14.976-6.708-14.976-14.979 C92.926,6.708,99.631,0,107.901,0S122.88,6.708,122.88,14.978L122.88,14.978z M29.954,14.978c0,8.271-6.708,14.979-14.979,14.979 S0,23.248,0,14.978C0,6.708,6.705,0,14.976,0S29.954,6.708,29.954,14.978L29.954,14.978z M76.417,14.978 c0,8.271-6.708,14.979-14.979,14.979c-8.27,0-14.978-6.708-14.978-14.979C46.46,6.708,53.168,0,61.438,0 C69.709,0,76.417,6.708,76.417,14.978L76.417,14.978z"/></g>
+            </svg>
+            <h3 class="skill-box__title title" id="skill-title-parent">Навыки <span id="skill-title"></span></h3>
             <ul id="skill-list" class="skill-box__list"></ul>
         </div>
     </div>

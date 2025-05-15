@@ -77,10 +77,15 @@
     z-index: 100;
 }
 
+.theme__item-svg {
+    fill: var(--color-black);
+    height: 25px;
+    width: 25px;
+}
+
 .theme__item_light {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
     margin-left: 5px;
 }
 
@@ -146,6 +151,23 @@
     font-size: var(--font-size-accent);
 }
 
+.intro__download-btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: var(--color-light-blue);
+    font-size: var(--font-size-text);
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.intro__download-btn:hover {
+    opacity: 0.9;
+    color: #fff;
+}
+
 .intro__photo {
     width: 50%;
     display: flex;
@@ -153,7 +175,7 @@
 }
 
 .intro__image {
-    border-radius: 71% 29% 36% 64% / 52% 76% 24% 48%  ;
+    border-radius: 71% 29% 36% 64% / 52% 76% 24% 48%;
     max-height: 75vh;
     max-width: 400px;
 }
@@ -205,6 +227,7 @@
     width: 30px;
     height: 30px;
     border-radius: 2px;
+    fill: var(--color-light-blue);
 }
 
 .about__text {
@@ -281,6 +304,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     transition: 0.2s;
     cursor: pointer;
@@ -292,6 +316,7 @@
 
 .skills__image {
     width: 100px;
+    fill: gray;
 }
 
 .skills__footer {
@@ -319,6 +344,7 @@
     background-color: #00000075;
     justify-content: center;
     align-items: center;
+    z-index: 200;
 }
 
 .skill-box__inner {
@@ -331,7 +357,7 @@
     flex-direction: column;
     gap: 15px;
     align-items: center;
-    z-index: 200;
+    z-index: 300;
 }
 
 .skill-box__btn-close {
@@ -349,6 +375,7 @@
 
 .skill-box__image {
     width: 100px;
+    fill: gray;
 }
 
 .skill-box__list {
@@ -491,6 +518,10 @@
         display: flex;
         justify-content: center;
     }
+    .intro__download-btn {
+        align-self: center;
+        margin-bottom: 15px;
+    }
     .intro__image {
         max-width: 75vw;
     }
@@ -541,5 +572,26 @@
     }
     .skills__image {
         width: 75px;
+    }
+}
+
+@media (max-width: 330px) {
+    .header {
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: center;
+    }
+    .title, p, span, h3 {
+        word-break: break-all;
+    }
+    .intro__title {
+        word-break: break-all;
+    }
+    .way__image {
+        width: 100vw;
+    }
+    .skills__list {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, 1fr);
     }
 }

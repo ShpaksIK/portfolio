@@ -8,6 +8,7 @@ const skillElement = document.getElementById('skill')
 const skillCloseButtonElement = document.getElementById('skill-close-btn')
 const skillImageElement = document.getElementById('skill-image')
 const skillTitleElement = document.getElementById('skill-title')
+const skillTitleParentElement = document.getElementById('skill-title-parent')
 const skillListElement = document.getElementById('skill-list')
 
 const rootElement = document.body
@@ -139,13 +140,14 @@ const showSkill = (skill) => {
             break
         case 'more':
             skillImageElement.src = './assets/images/more.png'
-            skillTitleElement.parentElement.innerText = 'Прочие технологии'
+            skillTitleParentElement.innerText = 'Прочие технологии'
             skillListElement.innerHTML = `
                 <li>Git</li>
                 <li>Vite</li>
                 <li>Bootstrap 5</li>
                 <li>Tailwind CSS</li>
                 <li>Figma</li>
+                <li>Python 3</li>
             `
             break
         default:
