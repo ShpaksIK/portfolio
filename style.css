@@ -378,6 +378,10 @@
     fill: gray;
 }
 
+.skill-box__image_svg {
+    display: none;
+}
+
 .skill-box__list {
     text-align: center;
 }
@@ -549,7 +553,7 @@
         gap: 25px 100px;
     }
     .footer__inner {
-        justify-content: center;
+        justify-content: space-between;
         gap: 15px;
     }
     .contact__form {

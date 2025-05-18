@@ -6,7 +6,8 @@ const navElement = document.getElementById('nav')
 
 const skillElement = document.getElementById('skill')
 const skillCloseButtonElement = document.getElementById('skill-close-btn')
-const skillImageElement = document.getElementById('skill-image')
+const skillImageElement = document.getElementById('skill-box__image')
+const skillSvgElement = document.getElementById('skill-box__svg')
 const skillTitleElement = document.getElementById('skill-title')
 const skillTitleParentElement = document.getElementById('skill-title-parent')
 const skillListElement = document.getElementById('skill-list')
@@ -78,6 +79,9 @@ const hideSkill = () => {
 
 const showSkill = (skill) => {
     skillElement.style.display = 'flex'
+    skillImageElement.style.display = 'block'
+    skillSvgElement.style.display = 'none'
+    
     themeAtribute = rootElement.getAttribute('class')
     rootElement.setAttribute('class', `${themeAtribute} modal-show`)
     switch (skill) {
@@ -139,7 +143,8 @@ const showSkill = (skill) => {
             `
             break
         case 'more':
-            skillImageElement.src = './assets/images/more.png'
+            skillImageElement.style.display = 'none'
+            skillSvgElement.style.display = 'block'
             skillTitleParentElement.innerText = 'Прочие технологии'
             skillListElement.innerHTML = `
                 <li>Git</li>
