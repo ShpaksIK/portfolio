@@ -117,7 +117,6 @@ const showSkill = (skill) => {
             skillTitleElement.innerText = 'TypeScript'
             skillListElement.innerHTML = `
                 <li>Понимание типов и интерфейсов для создания типизированных объектов</li>
-                <li>Параметризованные типы и generics</li>
                 <li>Применение TypeScript в рамках React</li>
             `
             break
@@ -148,9 +147,9 @@ const showSkill = (skill) => {
             skillTitleParentElement.innerText = 'Прочие технологии'
             skillListElement.innerHTML = `
                 <li>Git</li>
+                <li>NodeJS</li>
                 <li>Vite</li>
                 <li>Bootstrap 5</li>
-                <li>Tailwind CSS</li>
                 <li>Figma</li>
                 <li>Python 3</li>
             `
