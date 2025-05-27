@@ -412,6 +412,15 @@
 .footer__social {
     display: flex;
     gap: 10px;
+    align-items: center;
+}
+
+.footer__contacts {
+    text-align: center;
+}
+
+.footer__contacts p {
+    margin: 0;
 }
 
 .footer__item {
@@ -611,8 +620,12 @@
         gap: 25px 100px;
     }
     .footer__inner {
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 15px;
+    }
+    .footer__contacts {
+        text-align: left;
     }
     .contact__form {
         width: 100%;
