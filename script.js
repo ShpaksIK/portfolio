@@ -9,7 +9,6 @@ const skillCloseButtonElement = document.getElementById('skill-close-btn')
 const skillImageElement = document.getElementById('skill-box__image')
 const skillSvgElement = document.getElementById('skill-box__svg')
 const skillTitleElement = document.getElementById('skill-title')
-const skillTitleParentElement = document.getElementById('skill-title-parent')
 const skillListElement = document.getElementById('skill-list')
 
 const rootElement = document.body
@@ -87,7 +86,7 @@ const showSkill = (skill) => {
     switch (skill) {
         case 'html':
             skillImageElement.src = './assets/svg/html.svg'
-            skillTitleElement.innerText = 'HTML'
+            skillTitleElement.innerText = 'Навыки HTML'
             skillListElement.innerHTML = `
                 <li>Вёрстка на HTML</li>
                 <li>Методология BEM</li>
@@ -96,7 +95,7 @@ const showSkill = (skill) => {
             break
         case 'css':
             skillImageElement.src = './assets/svg/css.svg'
-            skillTitleElement.innerText = 'CSS'
+            skillTitleElement.innerText = 'Навыки CSS'
             skillListElement.innerHTML = `
                 <li>Flex, Grid</li>
                 <li>Анимации</li>
@@ -105,7 +104,7 @@ const showSkill = (skill) => {
             break
         case 'js':
             skillImageElement.src = './assets/svg/js.svg'
-            skillTitleElement.innerText = 'JavaScript'
+            skillTitleElement.innerText = 'Навыки JavaScript'
             skillListElement.innerHTML = `
                 <li>Основы языка</li>
                 <li>Асинхронность (Promise, async/await)</li>
@@ -114,7 +113,7 @@ const showSkill = (skill) => {
             break
         case 'ts':
             skillImageElement.src = './assets/svg/ts.svg'
-            skillTitleElement.innerText = 'TypeScript'
+            skillTitleElement.innerText = 'Навыки TypeScript'
             skillListElement.innerHTML = `
                 <li>Понимание типов и интерфейсов для создания типизированных объектов</li>
                 <li>Применение TypeScript в рамках React</li>
@@ -122,7 +121,7 @@ const showSkill = (skill) => {
             break
         case 'react':
             skillImageElement.src = './assets/svg/react.svg'
-            skillTitleElement.innerText = 'React'
+            skillTitleElement.innerText = 'Навыки React'
             skillListElement.innerHTML = `
                 <li>Функциональные и классовые компоненты</li>
                 <li>Реализация маршрутизации с помощью React Router</li>
@@ -133,7 +132,7 @@ const showSkill = (skill) => {
             break
         case 'redux':
             skillImageElement.src = './assets/svg/redux.svg'
-            skillTitleElement.innerText = 'Redux'
+            skillTitleElement.innerText = 'Навыки Redux'
             skillListElement.innerHTML = `
                 <li>Создание и настройка Redux-хранилища</li>
                 <li>Reducers, actions</li>
@@ -144,12 +143,11 @@ const showSkill = (skill) => {
         case 'more':
             skillImageElement.style.display = 'none'
             skillSvgElement.style.display = 'block'
-            skillTitleParentElement.innerText = 'Прочие технологии'
+            skillTitleElement.innerText = 'Прочие технологии'
             skillListElement.innerHTML = `
                 <li>Git</li>
                 <li>NodeJS</li>
                 <li>Vite</li>
-                <li>Bootstrap 5</li>
                 <li>Figma</li>
                 <li>Python 3</li>
             `
